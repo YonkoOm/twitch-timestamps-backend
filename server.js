@@ -1,9 +1,11 @@
-const express = require("express");
-const cors = require("cors");
-require("dotenv").config();
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
-app.use(cors()); // Allow browser requests
+app.use(cors());
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
